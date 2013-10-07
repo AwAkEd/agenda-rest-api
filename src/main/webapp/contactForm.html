@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Agenda RESTful - Nuevo Contacto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet"
+	media="screen">
+</head>
+<body>
+	<div class="hero-unit center">
+		<h1>Agenda RESTful!</h1>
+		<br />
+		<p>API REST para la aplicaci&oacute;n de ejemplo Agenda.</p>
+	</div>
+	<br />
+	<div class="container">
+		<form class="form-horizontal span6" action="contactos" method="post">
+			<fieldset>
+				<legend>Datos del Nuevo Contacto</legend>
+				<!-- Nombre -->
+				<div class="control-group">
+					<label class="control-label">Nombre</label>
+					<div class="controls">
+						<input id="nombre" name="nombre" type="text" placeholder="Nombre"
+							class="input-xlarge" required>
+						<p class="help-block"></p>
+					</div>
+				</div>
+				<!-- Apellidos -->
+				<div class="control-group">
+					<label class="control-label">Apellidos</label>
+					<div class="controls">
+						<input id="apellidos" name="apellidos" type="text"
+							placeholder="Apellidos" class="input-xlarge" required>
+						<p class="help-block"></p>
+					</div>
+				</div>
+				<!-- Direccion -->
+				<div class="control-group">
+					<label class="control-label">Direcci&oacute;n</label>
+					<div class="controls">
+						<input id="direccion" name="direccion" type="text"
+							placeholder="Direcci&oacute;n completa" class="input-xlarge"
+							required>
+						<p class="help-block">Calle, numero, piso, puerta,
+							poblaci&oacute;n, provincia, ...</p>
+					</div>
+				</div>
+				<!-- Email-->
+				<div class="control-group">
+					<label class="control-label">Email</label>
+					<div class="controls">
+						<input id="email" name="email" type="text"
+							placeholder="email@email.org" class="input-xlarge" required>
+						<p class="help-block">Email de contacto</p>
+					</div>
+				</div>
+				<!-- Tel. Fijo -->
+				<div class="control-group">
+					<label class="control-label">Tel&eacute;fono Fijo</label>
+					<div class="controls">
+						<input id="telefonoFijo" name="telefonoFijo" type="text"
+							placeholder="+## #########" class="input-xlarge">
+						<p class="help-block"></p>
+					</div>
+				</div>
+				<!-- Tel. Movil -->
+				<div class="control-group">
+					<label class="control-label">Tel&eacute;fono Movil</label>
+					<div class="controls">
+						<input id="telefonoMovil" name="telefonoMovil" type="text"
+							placeholder="+## #########" class="input-xlarge">
+						<p class="help-block"></p>
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">Salvar</button>
+					<a href="#myModal" class="btn" role="button" data-toggle="modal">Cancelar</a>
+				</div>
+			</fieldset>
+		</form>
+		<div class="modal small hide fade" id="myModal" tabindex="-1"
+			role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">X</button>
+				<h3 id="myModalLabel">Cancelar Adici&oacute;n</h3>
+			</div>
+			<div class="modal-body">
+				<p class="error-text">Seguro que desea salir?</p>
+			</div>
+			<div class="modal-footer">
+				<a href="index.jsp" class="btn btn-primary">Si</a>
+				<button class="btn" data-dismiss="modal" aria-hidden="true">No</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
