@@ -30,9 +30,9 @@
 			<div class="span4 well">
 				<div class="row">
 					<div class="span1">
-						<a href="http://critterapp.pagodabox.com/others/admin"
+						<a href="#"
 							class="thumbnail"><img
-							src="http://critterapp.pagodabox.com/img/user.jpg" alt=""></a>
+							src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/64/Actions-im-user-icon.png" alt=""></a>
 					</div>
 					<div class="span3">
 						<p>
